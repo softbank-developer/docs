@@ -1,0 +1,95 @@
+# Project information
+site_name: 'GAS'
+site_description: 'ライブラリの説明'
+site_author: 'SoftBank Developer'
+#site_url: 'http://yourSite'
+
+# Repository
+#repo_name: squidfunk/mkdocs-material
+#repo_url: https://github.com/softbank-developer/docs
+#edit_uri: ""
+
+# Copyright
+copyright: 'Copyright &copy; SoftBank Corp.'
+
+# Configuration)
+docs_dir: 'docs'
+theme:
+    name: 'material'
+    palette:
+        primary: 'teal'
+        accent: 'indigo'
+    logo:
+        icon: 'code'
+    language: 'ja'
+
+    # 404 page
+    static_templates:
+        - 404.html
+extra:
+    search:
+        language: 'jp'
+
+# This makes the mermaid-js stuff work
+# see docs/engineering/about/advanced_features.md for information and examples
+extra_css:
+  - https://unpkg.com/mermaid@7.0.3/dist/mermaid.css
+extra_javascript:
+  - https://unpkg.com/mermaid@7.0.3/dist/mermaid.min.js
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.toc:
+      permalink: true
+#- markdown.extensions.codehilite
+
+pages:
+  - Home: index.md
+
+  - 'NLC機能':
+    - '機能概要': NLC_rs.md
+    - '処理概要':
+      - '初期処理': NLC_init.md
+      - '分類処理': NLC_classify.md
+      - '通知処理': NLC_notify.md
+      - '学習処理': NLC_train.md
+      - 'ログ出力処理': NLC_log.md
+      - '例外一覧': NLC_exc.md
+    - 'コードリファレンス': 
+      - 'NLCLIB.gs': NLCLIB.md
+      - 'main.gs': NLCLIB_main.md
+
+  - 'RSS機能':
+    - '機能概要': RSS_rs.md
+    - '処理概要':
+      - 'フィード取得': RSS_feeds.md
+      - '例外一覧': RSS_exc.md
+    - 'コードリファレンス':
+      - 'RSSLIB.gs': RSSLIB.md
+      - 'main.gs': RSSLIB_main.md
+
+  - 'MAIL機能':
+    - '機能概要': MAIL_rs.md
+    - '処理概要':
+      - 'メール取得': MAIL_msgs.md
+      - '例外一覧': MAIL_exc.md
+    - 'コードリファレンス':
+      - 'MAILLIB.gs': MAILLIB.md
+      - 'main.gs': MAILLIB_main.md
+
+  - 'CHAT機能':
+    - '機能概要': CHAT_rs.md
+    - '処理概要':
+      - '初期処理': CHAT_init.md
+      - 'LINE応答': CHAT_line.md
+      - '例外一覧': CHAT_exc.md
+    - 'コードリファレンス':
+      - 'CHATLIB.gs': CHATLIB.md
+      - 'main.gs': CHATLIB_main.md
+
+  - 'FORM機能':
+    - '処理概要':
+      - '例外一覧': FORM_exc.md
+    - 'コードリファレンス':
+      - 'main.gs': FORMLIB_main.md
+
