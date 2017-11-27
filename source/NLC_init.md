@@ -47,6 +47,6 @@
 graph TB
   0(NLCUTIL_load_creds)
   subgraph onOpen
-  	A(NLCUTIL_exec_check_clfs)
+  	1(NLCUTIL_exec_check_clfs)
   end
 ```
