@@ -64,6 +64,7 @@ pages:
     - '機能概要': RSS_rs.md
     - '処理概要':
       - '初期処理': RSS_init.md
+      - '分類処理': RSS_classify.md
       - 'フィード取得': RSS_feeds.md
       - '例外一覧': RSS_exc.md
     - 'コードリファレンス':
@@ -74,6 +75,7 @@ pages:
     - '機能概要': MAIL_rs.md
     - '処理概要':
       - '初期処理': MAIL_init.md
+      - '分類処理': MAIL_classify.md
       - 'メール取得': MAIL_msgs.md
       - '例外一覧': MAIL_exc.md
     - 'コードリファレンス':
