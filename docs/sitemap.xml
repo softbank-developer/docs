@@ -12,7 +12,45 @@
     
         
     <url>
-     <loc>/NLC_rs/</loc>
+     <loc>/CHAT_rs/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/MAIL_rs/</loc>
      <lastmod>2017-11-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -56,48 +94,10 @@
     
         
     <url>
-     <loc>/MAIL_rs/</loc>
+     <loc>/NLC_rs/</loc>
      <lastmod>2017-11-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/CHAT_rs/</loc>
-     <lastmod>2017-11-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
         
     <url>
      <loc></loc>

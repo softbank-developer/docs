@@ -1,5 +1,5 @@
 # Project information
-site_name: 'GAS'
+site_name: 'G Suite with Watson'
 site_description: 'ライブラリの説明'
 site_author: 'SoftBank Developer'
 #site_url: 'http://yourSite'
@@ -47,7 +47,44 @@ markdown_extensions:
 pages:
   - TOP: index.md
 
-  - 'NLC機能':
+  - 'chat':
+    - '機能概要': CHAT_rs.md
+    - '処理概要':
+      - '初期処理': CHAT_init.md
+      - 'LINE応答': CHAT_line.md
+      - '例外一覧': CHAT_exc.md
+    - 'コードリファレンス':
+      - 'CHATLIB.gs': CHATLIB.md
+      - 'main.gs': CHATLIB_main.md
+
+  - 'form':
+    - '処理概要':
+      - '初期処理': FORM_init.md
+      - '例外一覧': FORM_exc.md
+    - 'コードリファレンス':
+      - 'main.gs': FORMLIB_main.md
+
+  - 'gmail':
+    - '機能概要': MAIL_rs.md
+    - '処理概要':
+      - '初期処理': MAIL_init.md
+      - 'メール取得': MAIL_msgs.md
+      - '例外一覧': MAIL_exc.md
+    - 'コードリファレンス':
+      - 'MAILLIB.gs': MAILLIB.md
+      - 'main.gs': MAILLIB_main.md
+
+  - 'rss':
+    - '機能概要': RSS_rs.md
+    - '処理概要':
+      - '初期処理': RSS_init.md
+      - 'フィード取得': RSS_feeds.md
+      - '例外一覧': RSS_exc.md
+    - 'コードリファレンス':
+      - 'RSSLIB.gs': RSSLIB.md
+      - 'main.gs': RSSLIB_main.md
+
+  - 'spreadsheet':
     - '機能概要': NLC_rs.md
     - '処理概要':
       - '初期処理': NLC_init.md
@@ -60,40 +97,4 @@ pages:
       - 'NLCLIB.gs': NLCLIB.md
       - 'main.gs': NLCLIB_main.md
 
-  - 'RSS機能':
-    - '機能概要': RSS_rs.md
-    - '処理概要':
-      - '初期処理': RSS_init.md
-      - 'フィード取得': RSS_feeds.md
-      - '例外一覧': RSS_exc.md
-    - 'コードリファレンス':
-      - 'RSSLIB.gs': RSSLIB.md
-      - 'main.gs': RSSLIB_main.md
-
-  - 'MAIL機能':
-    - '機能概要': MAIL_rs.md
-    - '処理概要':
-      - '初期処理': MAIL_init.md
-      - 'メール取得': MAIL_msgs.md
-      - '例外一覧': MAIL_exc.md
-    - 'コードリファレンス':
-      - 'MAILLIB.gs': MAILLIB.md
-      - 'main.gs': MAILLIB_main.md
-
-  - 'CHAT機能':
-    - '機能概要': CHAT_rs.md
-    - '処理概要':
-      - '初期処理': CHAT_init.md
-      - 'LINE応答': CHAT_line.md
-      - '例外一覧': CHAT_exc.md
-    - 'コードリファレンス':
-      - 'CHATLIB.gs': CHATLIB.md
-      - 'main.gs': CHATLIB_main.md
-
-  - 'FORM機能':
-    - '処理概要':
-      - '初期処理': FORM_init.md
-      - '例外一覧': FORM_exc.md
-    - 'コードリファレンス':
-      - 'main.gs': FORMLIB_main.md
 
