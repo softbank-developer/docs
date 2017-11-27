@@ -397,6 +397,40 @@
     初期処理
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" title="1. グローバル変数の設定" class="md-nav__link">
+    1. グローバル変数の設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-id" title="2. スプレッドシートIDの取得" class="md-nav__link">
+    2. スプレッドシートIDの取得
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-nlcutil_load_creds" title="3. クレデンシャルの取得 (NLCUTIL_load_creds)" class="md-nav__link">
+    3. クレデンシャルの取得 (NLCUTIL_load_creds)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-onopen" title="4. シートオープン時処理(onOpen)" class="md-nav__link">
+    4. シートオープン時処理(onOpen)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -990,6 +1024,40 @@
     初期処理
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" title="1. グローバル変数の設定" class="md-nav__link">
+    1. グローバル変数の設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-id" title="2. スプレッドシートIDの取得" class="md-nav__link">
+    2. スプレッドシートIDの取得
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-nlcutil_load_creds" title="3. クレデンシャルの取得 (NLCUTIL_load_creds)" class="md-nav__link">
+    3. クレデンシャルの取得 (NLCUTIL_load_creds)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-onopen" title="4. シートオープン時処理(onOpen)" class="md-nav__link">
+    4. シートオープン時処理(onOpen)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1017,22 +1085,22 @@
                 <h1 id="form">FORM 処理概要<a class="headerlink" href="#form" title="Permanent link">&para;</a></h1>
 <h2 id="_1">初期処理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>スプレッドシートを開いてから実行される処理</p>
-<ol>
-<li>
-<p>グローバル変数の設定</p>
+<h3 id="1">1. グローバル変数の設定<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>分類器数</li>
 <li>設定シートフィールドインデックス</li>
 <li>設定メタデータ</li>
 </ul>
+<h3 id="2-id">2. スプレッドシートIDの取得<a class="headerlink" href="#2-id" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>バインドされているスプレッドシートオブジェクトを取得する</p>
 </li>
 <li>
-<p>スプレッドシートIDの取得</p>
-<p>a. バインドされているスプレッドシートオブジェクトを取得する</p>
-<p>b. スプレッドシートオブジェクトからIDを取得する</p>
+<p>スプレッドシートオブジェクトからIDを取得する</p>
 </li>
-<li>
-<p>クレデンシャルの取得 (NLCUTIL_load_creds)</p>
+</ol>
+<h3 id="3-nlcutil_load_creds">3. クレデンシャルの取得 (NLCUTIL_load_creds)<a class="headerlink" href="#3-nlcutil_load_creds" title="Permanent link">&para;</a></h3>
 <p>スクリプトプロパティからNLCインスタンスのクレデンシャル情報を取得する</p>
 <div class="admonition note">
 <p class="admonition-title">参照するスクリプトプロパティ</p>
@@ -1059,18 +1127,26 @@
 </tbody>
 </table>
 </div>
+<h3 id="4-onopen">4. シートオープン時処理(onOpen)<a class="headerlink" href="#4-onopen" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Watsonメニューの作成</p>
+<div class="admonition info">
+<p class="admonition-title">メニュー構成</p>
+<ul>
+<li>分類 (NLCUTIL_classify_all)</li>
+<li>学習 (NLCUTIL_train_all)</li>
+<li>削除<ul>
+<li>分類器1 (NLCUTIL_del_clf1)</li>
+<li>分類器2 (NLCUTIL_del_clf2)</li>
+<li>分類器3 (NLCUTIL_del_clf3)</li>
+</ul>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>シートオープン時処理(onOpen)</p>
-<p>a. Watsonメニューの作成</p>
-<pre><code>分類
-学習
-削除
-  分類器1
-  分類器2
-  分類器3
-</code></pre>
-<p>b. 分類器状態の表示(NLCUTIL_exec_check_clfs)</p>
+<p>分類器状態の表示(NLCUTIL_exec_check_clfs)</p>
 </li>
 </ol>
 <hr />
