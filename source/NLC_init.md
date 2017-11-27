@@ -6,7 +6,7 @@
 1. グローバル変数の設定
 
 	- 分類器数
-    - 設定シートフィールドインデックス
+	- 設定シートフィールドインデックス
 	- 設定メタデータ
 
 2. スプレッドシートIDの取得
@@ -20,11 +20,11 @@
 	スクリプトプロパティからNLCインスタンスのクレデンシャル情報を取得する
 
     !!! Note "参照するスクリプトプロパティ"
-        | プロパティ名 | 説明 |
-        |:---------------|:---------|
-        | CREDS_USERNAME | ユーザー名 |
-        | CREDS_PASSWORD | パスワード |
-        | CREDS_URL | エンドポイント |
+		| プロパティ名 | 説明 |
+		|:---------------|:---------|
+		| CREDS_USERNAME | ユーザー名 |
+		| CREDS_PASSWORD | パスワード |
+		| CREDS_URL | エンドポイント |
 
 4. シートオープン時処理(onOpen)
 
@@ -46,6 +46,6 @@
 graph TB
   0(NLCUTIL_load_creds)
   subgraph onOpen
-  	A(NLCUTIL_exec_check_clfs)
+  	1(NLCUTIL_exec_check_clfs)
   end
 ```

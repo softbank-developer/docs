@@ -8,7 +8,7 @@
 	[https://support.google.com/mail/answer/7190?hl=ja](https://support.google.com/mail/answer/7190?hl=ja)
 
 !!! Warning "変更"
-    + 最大取得スレッド数を設定可能にする(ストーリー #6751)
+     最大取得スレッド数を設定可能にする(ストーリー #6751)
     + 最大取得スレッド数の上限は500にする(ストーリー #6810)
 
 !!! Note "取得基準日の算出方法"
