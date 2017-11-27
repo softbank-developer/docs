@@ -965,20 +965,17 @@
 <p>メタデータからユーザー設定情報を取得する</p>
 </li>
 <li>
-<p>XXX (RSSUTIL_load_rss)</p>
+<p>フィードの取り込み (RSSUTIL_load_rss)</p>
 <p>取得対象の件数分、以下の処理を繰り返す</p>
-<ol>
-<li>クリア ( RSSUTIL_clear_work)</li>
-</ol>
-<p>作業用シートをクリアする</p>
-<ol>
-<li>フィードの取得 (RSSUTIL_get_feeds)</li>
-</ol>
-<p>フィードを取得する</p>
-<ol>
-<li>データシートの更新 (RSSUTIL_update_data)</li>
-</ol>
-<p>シートを更新する</p>
+<p>a. 取得の準備 ( RSSUTIL_clear_work)</p>
+<pre><code>作業用シートをクリアする
+</code></pre>
+<p>b. フィードの取得 (RSSUTIL_get_feeds)</p>
+<pre><code>作業表シートにフィードを取得する
+</code></pre>
+<p>c. データシートの更新 (RSSUTIL_update_data)</p>
+<pre><code>シートを更新する
+</code></pre>
 </li>
 </ol>
 <h2 id="_1">モジュール構造図<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
