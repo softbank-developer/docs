@@ -6,26 +6,27 @@
 
 	※ UIが利用可能な場合は、確認ダイアログを表示する
 
-1. 設定情報の取得 (RSSUTIL_load_config))
+### 1. 設定情報の取得 (RSSUTIL_load_config))
 
-	メタデータからユーザー設定情報を取得する
+メタデータからユーザー設定情報を取得する
 
-2. フィードの取り込み (RSSUTIL_load_rss)
+### 2. フィードの取り込み (RSSUTIL_load_rss)
 
-	取得対象の件数分、以下の処理を繰り返す
+取得対象の件数分、以下の処理を繰り返す
 
-	a. 取得の準備 ( RSSUTIL_clear_work)
+1. 取得の準備 ( RSSUTIL_clear_work)
 
-		作業用シートをクリアする
+	作業用シートをクリアする
 
-	b. フィードの取得 (RSSUTIL_get_feeds)
+2. フィードの取得 (RSSUTIL_get_feeds)
 
-		作業表シートにフィードを取得する
+	作業表シートにフィードを取得する
 
-	c. データシートの更新 (RSSUTIL_update_data)
+3. データシートの更新 (RSSUTIL_update_data)
 
-		シートを更新する
+	シートを更新する
 
+---
 
 ## モジュール構造図
 
