@@ -62,6 +62,7 @@ pages:
   - 'RSS機能':
     - '機能概要': RSS_rs.md
     - '処理概要':
+      - '初期処理': RSS_init.md
       - 'フィード取得': RSS_feeds.md
       - '例外一覧': RSS_exc.md
     - 'コードリファレンス':
@@ -71,6 +72,7 @@ pages:
   - 'MAIL機能':
     - '機能概要': MAIL_rs.md
     - '処理概要':
+      - '初期処理': MAIL_init.md
       - 'メール取得': MAIL_msgs.md
       - '例外一覧': MAIL_exc.md
     - 'コードリファレンス':
@@ -89,6 +91,7 @@ pages:
 
   - 'FORM機能':
     - '処理概要':
+      - '初期処理': FORM_init.md
       - '例外一覧': FORM_exc.md
     - 'コードリファレンス':
       - 'main.gs': FORMLIB_main.md

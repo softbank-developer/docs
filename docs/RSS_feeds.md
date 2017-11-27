@@ -10,21 +10,21 @@
 
 	メタデータからユーザー設定情報を取得する
 
-2. XXX (RSSUTIL_load_rss)
+2. フィードの取り込み (RSSUTIL_load_rss)
 
 	取得対象の件数分、以下の処理を繰り返す
 
-	1. クリア ( RSSUTIL_clear_work)
+	a. 取得の準備 ( RSSUTIL_clear_work)
 
-	作業用シートをクリアする
+		作業用シートをクリアする
 
-	2. フィードの取得 (RSSUTIL_get_feeds)
+	b. フィードの取得 (RSSUTIL_get_feeds)
 
-	フィードを取得する
+		作業表シートにフィードを取得する
 
-	3. データシートの更新 (RSSUTIL_update_data)
+	c. データシートの更新 (RSSUTIL_update_data)
 
-	シートを更新する
+		シートを更新する
 
 
 ## モジュール構造図
