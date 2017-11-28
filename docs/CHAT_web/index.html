@@ -31,22 +31,22 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
       
-      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.4">
     
     
       
-        <title>G Suite with Watson</title>
+        <title>Webチャット応答処理 - G Suite with Watson</title>
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application-709eec9410.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-709eec9410.css">
       
-        <link rel="stylesheet" href="./assets/stylesheets/application-23f75ab9c7.palette.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-23f75ab9c7.palette.css">
       
     
     
-      <script src="./assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
       
@@ -81,7 +81,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="G Suite with Watson" class="md-header-nav__button md-logo">
+        <a href=".." title="G Suite with Watson" class="md-header-nav__button md-logo">
           
             <i class="md-icon">code</i>
           
@@ -95,8 +95,16 @@
           
             
               
+                <span class="md-header-nav__parent">
+                  chat
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  処理概要
+                </span>
+              
             
-            TOP
+            Webチャット応答処理
           
         </span>
       </div>
@@ -158,20 +166,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="." title="TOP" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href=".." title="TOP" class="md-nav__link">
       TOP
     </a>
-    
   </li>
 
     
@@ -179,10 +178,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       chat
@@ -200,7 +201,7 @@
 
 
   <li class="md-nav__item">
-    <a href="CHAT_rs/" title="機能概要" class="md-nav__link">
+    <a href="../CHAT_rs/" title="機能概要" class="md-nav__link">
       機能概要
     </a>
   </li>
@@ -210,10 +211,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
     
     <label class="md-nav__link" for="nav-2-2">
       処理概要
@@ -231,7 +234,7 @@
 
 
   <li class="md-nav__item">
-    <a href="CHAT_init/" title="初期処理" class="md-nav__link">
+    <a href="../CHAT_init/" title="初期処理" class="md-nav__link">
       初期処理
     </a>
   </li>
@@ -243,7 +246,7 @@
 
 
   <li class="md-nav__item">
-    <a href="CHAT_train/" title="学習処理" class="md-nav__link">
+    <a href="../CHAT_train/" title="学習処理" class="md-nav__link">
       学習処理
     </a>
   </li>
@@ -253,11 +256,102 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="CHAT_web/" title="Webチャット応答処理" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Webチャット応答処理
+      </label>
+    
+    <a href="./" title="Webチャット応答処理" class="md-nav__link md-nav__link--active">
       Webチャット応答処理
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#web-chatutil_send_message" title="Webチャット応答処理 (CHATUTIL_send_message)" class="md-nav__link">
+    Webチャット応答処理 (CHATUTIL_send_message)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-chatutil_load_config" title="1. 設定情報の取得 (CHATUTIL_load_config)" class="md-nav__link">
+    1. 設定情報の取得 (CHATUTIL_load_config)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-chatutil_load_conv_rules" title="2. 応答設定の取得 (CHATUTIL_load_conv_rules)" class="md-nav__link">
+    2. 応答設定の取得 (CHATUTIL_load_conv_rules)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" title="3. 入力メッセージの分類" class="md-nav__link">
+    3. 入力メッセージの分類
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-chatutil_select_message" title="4. 応答メッセージの選択 (CHATUTIL_select_message)" class="md-nav__link">
+    4. 応答メッセージの選択 (CHATUTIL_select_message)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-chatutil_store_dialog" title="4. 会話履歴の記録 (CHATUTIL_store_dialog)" class="md-nav__link">
+    4. 会話履歴の記録 (CHATUTIL_store_dialog)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" title="5. 応答メッセージの送信" class="md-nav__link">
+    5. 応答メッセージの送信
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="モジュール構造図" class="md-nav__link">
+    モジュール構造図
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -267,7 +361,7 @@
 
 
   <li class="md-nav__item">
-    <a href="CHAT_line/" title="LINE応答処理" class="md-nav__link">
+    <a href="../CHAT_line/" title="LINE応答処理" class="md-nav__link">
       LINE応答処理
     </a>
   </li>
@@ -279,7 +373,7 @@
 
 
   <li class="md-nav__item">
-    <a href="CHAT_exc/" title="例外一覧" class="md-nav__link">
+    <a href="../CHAT_exc/" title="例外一覧" class="md-nav__link">
       例外一覧
     </a>
   </li>
@@ -315,7 +409,7 @@
 
 
   <li class="md-nav__item">
-    <a href="CHATLIB/" title="CHATLIB.gs" class="md-nav__link">
+    <a href="../CHATLIB/" title="CHATLIB.gs" class="md-nav__link">
       CHATLIB.gs
     </a>
   </li>
@@ -327,7 +421,7 @@
 
 
   <li class="md-nav__item">
-    <a href="CHATLIB_main/" title="main.gs" class="md-nav__link">
+    <a href="../CHATLIB_main/" title="main.gs" class="md-nav__link">
       main.gs
     </a>
   </li>
@@ -368,7 +462,7 @@
 
 
   <li class="md-nav__item">
-    <a href="FORM_rs/" title="機能概要" class="md-nav__link">
+    <a href="../FORM_rs/" title="機能概要" class="md-nav__link">
       機能概要
     </a>
   </li>
@@ -399,7 +493,7 @@
 
 
   <li class="md-nav__item">
-    <a href="FORM_init/" title="初期処理" class="md-nav__link">
+    <a href="../FORM_init/" title="初期処理" class="md-nav__link">
       初期処理
     </a>
   </li>
@@ -411,7 +505,7 @@
 
 
   <li class="md-nav__item">
-    <a href="FORM_exc/" title="例外一覧" class="md-nav__link">
+    <a href="../FORM_exc/" title="例外一覧" class="md-nav__link">
       例外一覧
     </a>
   </li>
@@ -447,7 +541,7 @@
 
 
   <li class="md-nav__item">
-    <a href="FORMLIB_main/" title="main.gs" class="md-nav__link">
+    <a href="../FORMLIB_main/" title="main.gs" class="md-nav__link">
       main.gs
     </a>
   </li>
@@ -488,7 +582,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MAIL_rs/" title="機能概要" class="md-nav__link">
+    <a href="../MAIL_rs/" title="機能概要" class="md-nav__link">
       機能概要
     </a>
   </li>
@@ -519,7 +613,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MAIL_init/" title="初期処理" class="md-nav__link">
+    <a href="../MAIL_init/" title="初期処理" class="md-nav__link">
       初期処理
     </a>
   </li>
@@ -531,7 +625,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MAIL_msgs/" title="メール取得処理" class="md-nav__link">
+    <a href="../MAIL_msgs/" title="メール取得処理" class="md-nav__link">
       メール取得処理
     </a>
   </li>
@@ -543,7 +637,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MAIL_train/" title="学習処理" class="md-nav__link">
+    <a href="../MAIL_train/" title="学習処理" class="md-nav__link">
       学習処理
     </a>
   </li>
@@ -555,7 +649,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MAIL_classify/" title="分類処理" class="md-nav__link">
+    <a href="../MAIL_classify/" title="分類処理" class="md-nav__link">
       分類処理
     </a>
   </li>
@@ -567,7 +661,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MAIL_exc/" title="例外一覧" class="md-nav__link">
+    <a href="../MAIL_exc/" title="例外一覧" class="md-nav__link">
       例外一覧
     </a>
   </li>
@@ -603,7 +697,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MAILLIB/" title="MAILLIB.gs" class="md-nav__link">
+    <a href="../MAILLIB/" title="MAILLIB.gs" class="md-nav__link">
       MAILLIB.gs
     </a>
   </li>
@@ -615,7 +709,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MAILLIB_main/" title="main.gs" class="md-nav__link">
+    <a href="../MAILLIB_main/" title="main.gs" class="md-nav__link">
       main.gs
     </a>
   </li>
@@ -656,7 +750,7 @@
 
 
   <li class="md-nav__item">
-    <a href="RSS_rs/" title="機能概要" class="md-nav__link">
+    <a href="../RSS_rs/" title="機能概要" class="md-nav__link">
       機能概要
     </a>
   </li>
@@ -687,7 +781,7 @@
 
 
   <li class="md-nav__item">
-    <a href="RSS_init/" title="初期処理" class="md-nav__link">
+    <a href="../RSS_init/" title="初期処理" class="md-nav__link">
       初期処理
     </a>
   </li>
@@ -699,7 +793,7 @@
 
 
   <li class="md-nav__item">
-    <a href="RSS_feeds/" title="フィード取得処理" class="md-nav__link">
+    <a href="../RSS_feeds/" title="フィード取得処理" class="md-nav__link">
       フィード取得処理
     </a>
   </li>
@@ -711,7 +805,7 @@
 
 
   <li class="md-nav__item">
-    <a href="RSS_train/" title="学習処理" class="md-nav__link">
+    <a href="../RSS_train/" title="学習処理" class="md-nav__link">
       学習処理
     </a>
   </li>
@@ -723,7 +817,7 @@
 
 
   <li class="md-nav__item">
-    <a href="RSS_classify/" title="分類処理" class="md-nav__link">
+    <a href="../RSS_classify/" title="分類処理" class="md-nav__link">
       分類処理
     </a>
   </li>
@@ -735,7 +829,7 @@
 
 
   <li class="md-nav__item">
-    <a href="RSS_exc/" title="例外一覧" class="md-nav__link">
+    <a href="../RSS_exc/" title="例外一覧" class="md-nav__link">
       例外一覧
     </a>
   </li>
@@ -771,7 +865,7 @@
 
 
   <li class="md-nav__item">
-    <a href="RSSLIB/" title="RSSLIB.gs" class="md-nav__link">
+    <a href="../RSSLIB/" title="RSSLIB.gs" class="md-nav__link">
       RSSLIB.gs
     </a>
   </li>
@@ -783,7 +877,7 @@
 
 
   <li class="md-nav__item">
-    <a href="RSSLIB_main/" title="main.gs" class="md-nav__link">
+    <a href="../RSSLIB_main/" title="main.gs" class="md-nav__link">
       main.gs
     </a>
   </li>
@@ -824,7 +918,7 @@
 
 
   <li class="md-nav__item">
-    <a href="NLC_rs/" title="機能概要" class="md-nav__link">
+    <a href="../NLC_rs/" title="機能概要" class="md-nav__link">
       機能概要
     </a>
   </li>
@@ -855,7 +949,7 @@
 
 
   <li class="md-nav__item">
-    <a href="NLC_init/" title="初期処理" class="md-nav__link">
+    <a href="../NLC_init/" title="初期処理" class="md-nav__link">
       初期処理
     </a>
   </li>
@@ -867,7 +961,7 @@
 
 
   <li class="md-nav__item">
-    <a href="NLC_train/" title="学習処理" class="md-nav__link">
+    <a href="../NLC_train/" title="学習処理" class="md-nav__link">
       学習処理
     </a>
   </li>
@@ -879,7 +973,7 @@
 
 
   <li class="md-nav__item">
-    <a href="NLC_classify/" title="分類処理" class="md-nav__link">
+    <a href="../NLC_classify/" title="分類処理" class="md-nav__link">
       分類処理
     </a>
   </li>
@@ -891,7 +985,7 @@
 
 
   <li class="md-nav__item">
-    <a href="NLC_notify/" title="通知処理" class="md-nav__link">
+    <a href="../NLC_notify/" title="通知処理" class="md-nav__link">
       通知処理
     </a>
   </li>
@@ -903,7 +997,7 @@
 
 
   <li class="md-nav__item">
-    <a href="NLC_log/" title="ログ出力処理" class="md-nav__link">
+    <a href="../NLC_log/" title="ログ出力処理" class="md-nav__link">
       ログ出力処理
     </a>
   </li>
@@ -915,7 +1009,7 @@
 
 
   <li class="md-nav__item">
-    <a href="NLC_exc/" title="例外一覧" class="md-nav__link">
+    <a href="../NLC_exc/" title="例外一覧" class="md-nav__link">
       例外一覧
     </a>
   </li>
@@ -951,7 +1045,7 @@
 
 
   <li class="md-nav__item">
-    <a href="NLCLIB/" title="NLCLIB.gs" class="md-nav__link">
+    <a href="../NLCLIB/" title="NLCLIB.gs" class="md-nav__link">
       NLCLIB.gs
     </a>
   </li>
@@ -963,7 +1057,7 @@
 
 
   <li class="md-nav__item">
-    <a href="NLCLIB_main/" title="main.gs" class="md-nav__link">
+    <a href="../NLCLIB_main/" title="main.gs" class="md-nav__link">
       main.gs
     </a>
   </li>
@@ -996,6 +1090,75 @@
     
   
   
+    <label class="md-nav__title" for="toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#web-chatutil_send_message" title="Webチャット応答処理 (CHATUTIL_send_message)" class="md-nav__link">
+    Webチャット応答処理 (CHATUTIL_send_message)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-chatutil_load_config" title="1. 設定情報の取得 (CHATUTIL_load_config)" class="md-nav__link">
+    1. 設定情報の取得 (CHATUTIL_load_config)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-chatutil_load_conv_rules" title="2. 応答設定の取得 (CHATUTIL_load_conv_rules)" class="md-nav__link">
+    2. 応答設定の取得 (CHATUTIL_load_conv_rules)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" title="3. 入力メッセージの分類" class="md-nav__link">
+    3. 入力メッセージの分類
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-chatutil_select_message" title="4. 応答メッセージの選択 (CHATUTIL_select_message)" class="md-nav__link">
+    4. 応答メッセージの選択 (CHATUTIL_select_message)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-chatutil_store_dialog" title="4. 会話履歴の記録 (CHATUTIL_store_dialog)" class="md-nav__link">
+    4. 会話履歴の記録 (CHATUTIL_store_dialog)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" title="5. 応答メッセージの送信" class="md-nav__link">
+    5. 応答メッセージの送信
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="モジュール構造図" class="md-nav__link">
+    モジュール構造図
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1007,9 +1170,151 @@
               
                 
                 
-                <h1 id="g-suite-apps-script-with-watson">G Suite Apps Script with Watson<a class="headerlink" href="#g-suite-apps-script-with-watson" title="Permanent link">&para;</a></h1>
-<p>GoogleのG Suite（Gmail、フォーム、スプレッドシート、GAS等）とIBM Watson™を組み合わせた業務支援ツールのドキュメントです。</p>
-<p><img alt="img" src="https://github.com/softbank-developer/docs/blob/master/images/watson_gsuite_logo.png?raw=true" /></p>
+                <h1 id="chat">CHAT 処理概要<a class="headerlink" href="#chat" title="Permanent link">&para;</a></h1>
+<h2 id="web-chatutil_send_message">Webチャット応答処理 (CHATUTIL_send_message)<a class="headerlink" href="#web-chatutil_send_message" title="Permanent link">&para;</a></h2>
+<p>Webチャットからのリクエストに対して応答メッセージを送信する</p>
+<h3 id="1-chatutil_load_config">1. 設定情報の取得 (CHATUTIL_load_config)<a class="headerlink" href="#1-chatutil_load_config" title="Permanent link">&para;</a></h3>
+<p>メタデータからユーザー設定情報を取得する</p>
+<h3 id="2-chatutil_load_conv_rules">2. 応答設定の取得 (CHATUTIL_load_conv_rules)<a class="headerlink" href="#2-chatutil_load_conv_rules" title="Permanent link">&para;</a></h3>
+<p>ユーザー設定情報から応答設定情報を取得する</p>
+<ol>
+<li>
+<p>以下の条件のいずれかに該当する場合は応答設定なしとして処理する</p>
+<div class="admonition tips">
+<p class="admonition-title">条件</p>
+<ul>
+<li>シートが見つからなかった場合</li>
+<li>行または列が０件</li>
+</ul>
+</div>
+</li>
+</ol>
+<h3 id="3">3. 入力メッセージの分類<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>入力メッセージを各分類器で分類する</p>
+<ol>
+<li>NLCのAPIを実行する (NLCAPI_post_classify)</li>
+</ol>
+<h3 id="4-chatutil_select_message">4. 応答メッセージの選択 (CHATUTIL_select_message)<a class="headerlink" href="#4-chatutil_select_message" title="Permanent link">&para;</a></h3>
+<p>分類結果と各応答条件を比較して、応答メッセージを選定する</p>
+<div class="admonition warning">
+<p class="admonition-title">例外メッセージ</p>
+<p>APIの実行ステータスが200以外だった場合は、設定シートの例外メッセージを使用する</p>
+</div>
+<ol>
+<li>
+<p>メッセージの判定</p>
+<p>分類結果と各応答条件を照合し、最初にマッチしたメッセージを応答メッセージとして使用する</p>
+<div class="admonition tips">
+<p class="admonition-title">判定方法</p>
+<table>
+<thead>
+<tr>
+<th>インテント</th>
+<th>確信度</th>
+<th>適合条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空白</td>
+<td>---</td>
+<td>すべての分類結果にマッチ</td>
+</tr>
+<tr>
+<td>空白以外</td>
+<td>空白</td>
+<td>分類結果と応答条件のインテント名が一致した場合</td>
+</tr>
+<tr>
+<td>空白以外</td>
+<td>空白以外</td>
+<td>分類結果と応答条件のインテントが一致 かつ 分類結果の確信度が応答条件の確信度以上の場合</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">該当なしメッセージ</p>
+<p>いずれの応答条件にもマッチしなかった場合は、設定シートの該当なしメッセージを使用する</p>
+</div>
+</li>
+<li>
+<p>埋め込みタグの展開(CHATUTIL_expand_tags)</p>
+<ol>
+<li>
+<p>応答メッセージ中にある、以下の埋め込みタグを置換する</p>
+<div class="admonition info">
+<p class="admonition-title">埋め込みタグ</p>
+<table>
+<thead>
+<tr>
+<th>タグ</th>
+<th>置換データ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[[#input]]</td>
+<td>入力メッセージ</td>
+</tr>
+<tr>
+<td>[[#date]]</td>
+<td>現在日付(yyyy年MM月dd日)</td>
+</tr>
+<tr>
+<td>[[#time]]</td>
+<td>現在時刻(HH時mm分ss秒)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="4-chatutil_store_dialog">4. 会話履歴の記録 (CHATUTIL_store_dialog)<a class="headerlink" href="#4-chatutil_store_dialog" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>シートが見つからない場合は新規に作成する</p>
+</li>
+<li>
+<p>シートの最終行に以下の項目を追記する</p>
+<div class="admonition info">
+<p class="admonition-title">項目</p>
+<ul>
+<li>受信日時</li>
+<li>入力メッセージ</li>
+<li>応答メッセージ</li>
+<li>分類器1のインテント名</li>
+<li>分類器1の確信度</li>
+<li>分類器1の分類日時</li>
+<li>分類器2のインテント名</li>
+<li>分類器2の確信度</li>
+<li>分類器2の分類日時</li>
+<li>分類器3のインテント名</li>
+<li>分類器3の確信度</li>
+<li>分類器3の分類日時</li>
+</ul>
+</div>
+</li>
+</ol>
+<h3 id="5">5. 応答メッセージの送信<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>応答メッセージを送信する</li>
+</ol>
+<hr />
+<h2 id="_1">モジュール構造図<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<pre><code class="mermaid">graph TB
+  subgraph CHATUTIL_send_message
+    A(CHATUTIL_load_config)--&gt;B(CHATUTIL_load_conv_rules)
+    B(CHATUTIL_load_conv_rules)--&gt;C(NLCAPI_post_classify)
+    C(NLCAPI_post_classify)--&gt;D(CHATUTIL_select_message)
+    D(CHATUTIL_select_message)--&gt;E(CHATUTIL_store_dialog)
+  end
+  subgraph CHATUTIL_select_message
+    F(CHATUTIL_expand_tags)
+  end
+</code></pre>
                 
                   
                 
@@ -1028,14 +1333,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
+          <a href="../CHAT_train/" title="学習処理" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                学習処理
+              </span>
+            </div>
+          </a>
         
-          <a href="CHAT_rs/" title="機能概要" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../CHAT_line/" title="LINE応答処理" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                機能概要
+                LINE応答処理
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1069,24 +1388,24 @@
       
     </div>
     
-      <script src="./assets/javascripts/application-8e4952e681.js"></script>
+      <script src="../assets/javascripts/application-8e4952e681.js"></script>
       
         
         
           
-          <script src="./assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
           
             
               
-                <script src="./assets/javascripts/lunr/tinyseg.js"></script>
+                <script src="../assets/javascripts/lunr/tinyseg.js"></script>
               
-              <script src="./assets/javascripts/lunr/lunr.jp.js"></script>
+              <script src="../assets/javascripts/lunr/lunr.jp.js"></script>
             
           
           
         
       
-      <script>app.initialize({version:"0.17.1",url:{base:"."}})</script>
+      <script>app.initialize({version:"0.17.1",url:{base:".."}})</script>
       
         <script src="https://unpkg.com/mermaid@7.0.3/dist/mermaid.min.js"></script>
       
