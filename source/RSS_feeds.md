@@ -1,6 +1,6 @@
 # RSS 処理概要
 
-## フィード取得 (RSSUTIL_crawl)
+## フィード取得処理 (RSSUTIL_crawl)
 
 購読設定されたRSSフィードを取得する
 

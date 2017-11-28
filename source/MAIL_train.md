@@ -1,12 +1,12 @@
-# NLC 処理概要
+# MAIL 処理概要
 
-## 学習処理 (NLCUTIL_train_all)
+## 学習処理 (MAILUTIL_train_all)
 
 分類器を作成し、 シートの学習対象のテキストを学習させる
 
 	※ UIが利用可能な場合は、確認ダイアログを表示する
 
-### 1. 設定情報の取得 (NLCUTIL_load_config)
+### 1. 設定情報の取得 (MAILUTIL_load_config)
 
 メタデータからユーザー設定情報を取得する
 
@@ -31,17 +31,33 @@ APIを実行する
 
 各行からCSV形式の学習データを作成する
 
-1. インテント名、学習テキストの編集
+1. インテント名・件名・本文の編集
+
+	インテント名・件名・本文(処理対象)のぞれぞれのテキストを編集する
 
 	!!! note "編集ルール"
 		- 改行、タブは削除する
 		- シングル・ダブルクォートは、ダブルクォートでエスケープする
 		- 前後の空白はトリミングする
-		- 長さが1024文字を超える場合は、先頭から1024文字以内に切りつめる
+
+1. 学習対象テキストの選択
+
+	学習・分類対象の設定により、学習対象テキストを決定する
+
+    |学習・分類対象|学習対象テキスト|
+	|----|----|
+	|件名のみ|件名を使用|
+	|本文のみ|本文(処理対象)を使用|
+	|件名・本文両方|件名と本文(処理対象)を半角スペースで結合|
+
+	!!! warning "件名・本文結合の例外"
+	   	件名・本文(処理対象)のいずれかがブランクの場合は、ブランクでないほうを学習対象テキストとして使用する（両方ともブランクの場合は学習対象外)
+
+	- 長さが1024文字を超える場合は、先頭から1024文字以内に切りつめる
 
 1. 学習データに追加
 
-	- 以下の条件のいずれかに該当する場合は学習データに追加しない
+	- 以下の条件のいずれかに該当する場合は学習データに含めない
 
 	!!! tip "条件"
 		- インテント名がブランクの場合
@@ -85,8 +101,8 @@ APIを実行する
 ## モジュール構造図
 ```mermaid
 graph TB
-  subgraph NLCUTIL_train_all
-  A(NLCUTIL_load_config)-->B(NLCAPI_get_classifiers)
+  subgraph MAILUTIL_train_all
+  A(MAILUTIL_load_config)-->B(NLCAPI_get_classifiers)
   B(NLCAPI_get_classifiers)-->C(NLCUTIL_clf_vers)
   C(NLCUTIL_clf_vers)-->D(NLCAPI_post_classifiers)
   D(NLCAPI_post_classifiers)-->E(NLCAPI_delete_classifier)

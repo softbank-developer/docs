@@ -51,13 +51,16 @@ pages:
     - '機能概要': CHAT_rs.md
     - '処理概要':
       - '初期処理': CHAT_init.md
-      - 'LINE応答': CHAT_line.md
+      - '学習処理': CHAT_train.md
+      - 'Webチャット応答処理': CHAT_web.md
+      - 'LINE応答処理': CHAT_line.md
       - '例外一覧': CHAT_exc.md
     - 'コードリファレンス':
       - 'CHATLIB.gs': CHATLIB.md
       - 'main.gs': CHATLIB_main.md
 
   - 'form':
+    - '機能概要': FORM_rs.md
     - '処理概要':
       - '初期処理': FORM_init.md
       - '例外一覧': FORM_exc.md
@@ -68,8 +71,9 @@ pages:
     - '機能概要': MAIL_rs.md
     - '処理概要':
       - '初期処理': MAIL_init.md
+      - 'メール取得処理': MAIL_msgs.md
+      - '学習処理': MAIL_train.md
       - '分類処理': MAIL_classify.md
-      - 'メール取得': MAIL_msgs.md
       - '例外一覧': MAIL_exc.md
     - 'コードリファレンス':
       - 'MAILLIB.gs': MAILLIB.md
@@ -79,8 +83,9 @@ pages:
     - '機能概要': RSS_rs.md
     - '処理概要':
       - '初期処理': RSS_init.md
+      - 'フィード取得処理': RSS_feeds.md
+      - '学習処理': RSS_train.md
       - '分類処理': RSS_classify.md
-      - 'フィード取得': RSS_feeds.md
       - '例外一覧': RSS_exc.md
     - 'コードリファレンス':
       - 'RSSLIB.gs': RSSLIB.md
@@ -90,9 +95,9 @@ pages:
     - '機能概要': NLC_rs.md
     - '処理概要':
       - '初期処理': NLC_init.md
+      - '学習処理': NLC_train.md
       - '分類処理': NLC_classify.md
       - '通知処理': NLC_notify.md
-      - '学習処理': NLC_train.md
       - 'ログ出力処理': NLC_log.md
       - '例外一覧': NLC_exc.md
     - 'コードリファレンス': 

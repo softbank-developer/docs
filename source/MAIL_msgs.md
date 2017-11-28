@@ -1,6 +1,6 @@
 # MAIL 処理概要
 
-## メール取得 (MAILUTIL_load_messages)
+## メール取得処理 (MAILUTIL_load_messages)
 
 	※ UIが利用可能な場合は、確認ダイアログを表示する
 

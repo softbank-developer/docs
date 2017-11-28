@@ -1,12 +1,12 @@
-# NLC 処理概要
+# CHAT 処理概要
 
-## 学習処理 (NLCUTIL_train_all)
+## 学習処理 (CHATUTIL_train_all)
 
 分類器を作成し、 シートの学習対象のテキストを学習させる
 
 	※ UIが利用可能な場合は、確認ダイアログを表示する
 
-### 1. 設定情報の取得 (NLCUTIL_load_config)
+### 1. 設定情報の取得 (CHATUTIL_load_config)
 
 メタデータからユーザー設定情報を取得する
 
@@ -41,7 +41,7 @@ APIを実行する
 
 1. 学習データに追加
 
-	- 以下の条件のいずれかに該当する場合は学習データに追加しない
+	- 以下の条件のいずれかに該当する場合は学習データに含めない
 
 	!!! tip "条件"
 		- インテント名がブランクの場合
@@ -85,8 +85,8 @@ APIを実行する
 ## モジュール構造図
 ```mermaid
 graph TB
-  subgraph NLCUTIL_train_all
-  A(NLCUTIL_load_config)-->B(NLCAPI_get_classifiers)
+  subgraph CHATUTIL_train_all
+  A(CHATUTIL_load_config)-->B(NLCAPI_get_classifiers)
   B(NLCAPI_get_classifiers)-->C(NLCUTIL_clf_vers)
   C(NLCUTIL_clf_vers)-->D(NLCAPI_post_classifiers)
   D(NLCAPI_post_classifiers)-->E(NLCAPI_delete_classifier)
